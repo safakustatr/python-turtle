@@ -1,12 +1,13 @@
-from turtle import Turtle
+import turtle as t
 import random
 
-timmy = Turtle()
+timmy = t.Turtle()
+t.colormode(255)
 
 def generate_random_color():
-    r = random.randint(0, 100)/100
-    g = random.randint(0, 100)/100
-    b = random.randint(0, 100)/100
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
     return r, g, b
 
 def draw_shape(edge):
@@ -20,16 +21,5 @@ for i in range(3,11):
     draw_shape(i)
 
 
-
-
-
-
-
-
-
-
-
-
-
-screen = Screen()
+screen = t.Screen()
 screen.exitonclick()
