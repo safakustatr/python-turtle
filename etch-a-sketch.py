@@ -4,7 +4,6 @@ jo = Turtle()
 screen = Screen()
 
 def clear_screen():
-    jo.home()
     jo.reset()
 
 def move_forward():
